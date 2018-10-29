@@ -16,7 +16,7 @@ var path string
 var layout string
 func main() {
 	database = make(map[string]string)
-	path = "/home/roswell/telegramusers.txt"
+	path = "/path/to/telegram/user/list"
 	file, err := os.Open(path)
 	if err != nil {
 		log.Fatal(err)
@@ -28,7 +28,7 @@ func main() {
 	}
 	layout = "2006-01-02"
 	fmt.Println("User database updated and ready.")
-	bot, err := tbot.NewServer("736474925:AAEKWsWHYz3QmHN6AZPTSc2b6UoREY26ZTI")
+	bot, err := tbot.NewServer("YOUR TELEGRAM AUTH TOKEN")
         if err != nil {
                 log.Fatal(err)
         }
@@ -76,8 +76,6 @@ func getLurkers(message *tbot.Message, amt string){
 			output = output + "User: " + k + "\nLastActive: " + v + "\n"
 			}
 		}
-	}
-		//output = output + "User: " + k + "\nLast active: " + v + "\n"
-//Otherwise, parse the time and see if it's before the date N days ago. 
+	} 
 	message.Reply(output)
 }
