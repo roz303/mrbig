@@ -1,2 +1,6 @@
 # mrbig
 An excersize in Golang to provide information on telegram lurkers.
+
+I wrote this in about five hours as per request from a friend; I was initially going to use my main language Java, but it was being mean. So, my sleep-deprived self decided to use Golang, of which I've never used before. So it was pretty fun not only learning a new programming language, but also how telegram bots work and how to work with the API. Can't say I'm displeased, honestly. I like GoLang. the only reason I used python was because I was already 75 percent done writing the main program until I realized the API I was using didn't support getting a user list. So, I had to touch python. Ew. But the main system is in Golang; and if you're a coder, feel free to create your own update script! Because apparently that side of Mr. Big is interchangable now. And this is also my first time using git! Whew, what a learning experience! Thanks!
+
+To set one up yourself: You're going to need to create a bot on telegram, get its API token, and create an app token for the userlist update script. You're also going to need to change file paths in both program files to reflect where the update script is going to drop the file for Mr. Big to pick up.
